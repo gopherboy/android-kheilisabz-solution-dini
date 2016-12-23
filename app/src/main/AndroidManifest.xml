@@ -8,16 +8,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.majidhhdri.kheilisabz.dini.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|density|keyboardHidden|screenSize">
-
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|density|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.majidhhdri.kheili.kheili.AboutActivity"
+            android:parentActivityName="com.majidhhdri.kheilisabz.dini.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.majidhhdri.kheilisabz.dini.MainActivity" />></activity>
     </application>
 
 </manifest>

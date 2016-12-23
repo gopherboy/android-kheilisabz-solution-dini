@@ -1,20 +1,36 @@
 package com.majidhhdri.kheilisabz.dini;
 
+import android.content.Intent;
 import android.support.design.internal.BottomNavigationMenu;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
+
+import com.majidhhdri.kheili.kheili.AboutActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     int questionNumber = 1;
     ImageView solution;
     TextView counter;
+    Switch keepScreenOnSwitch;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.appbar, menu);
+        return true;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+
         solution = (ImageView)findViewById(R.id.solution);
+        keepScreenOnSwitch = (Switch)findViewById(R.id.keep_on_switch);
         int id = getApplicationContext().getResources().getIdentifier("dini0001", "drawable", getPackageName());
         solution.setImageResource(id);
         Button plusOne = (Button)findViewById(R.id.plus_1);
@@ -66,8 +84,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        keepScreenOnSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b) {
+                    getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                }
+                else {
+                    getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                }
+            }
+        });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                Intent about = new Intent(this, AboutActivity.class);
+                startActivity(about);
+                return true;
 
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
     }
     public View.OnClickListener getListener(final int num) {
         return new View.OnClickListener() {

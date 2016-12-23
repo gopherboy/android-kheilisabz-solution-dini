@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">خیلیییی!</string>
+    <string name="app_name">پاسخ‌نامه دین‌و‌زندگی خیلی‌سبز</string>
+    <string name="plus_1">+۱</string>
+    <string name="plus_10">+۱۰</string>
+    <string name="plus_100">+۱۰۰</string>
+    <string name="plus_1000">+۱۰۰۰</string>
+    <string name="minus_1">-۱</string>
+    <string name="minus_10">-۱۰</string>
+    <string name="minus_100">-۱۰۰</string>
+    <string name="minus_1000">-۱۰۰۰</string>
+    <string name="pic_description">جواب سوال</string>
+    <string name="action_about">درباره برنامه</string>
+    <string name="keep_screen_on">روشن نگه‌داشتن صفحه</string>
+    <string name="app_description">داده‌های این برنامه از سایت رسمی خیلی سبز برگرفته شده است.</string>
+    <string name="app_license">این برنامه تحت Apache License 2.0 عرضه شده.</string>
+    <string name="app_source">این برنامه متن باز است و سورس این برنامه از طریق لینک زیر قابل دسترسی‌ست.</string>
+    <string name="app_developer">توسعه‌دهنده: مجید حاجی‌حیدری</string>
 </resources>
