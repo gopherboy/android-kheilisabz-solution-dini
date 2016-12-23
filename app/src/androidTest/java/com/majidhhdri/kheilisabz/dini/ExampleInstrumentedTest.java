@@ -1,4 +1,4 @@
-package com.majidhhdri.kheili.kheili;
+package com.majidhhdri.kheilisabz.dini;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

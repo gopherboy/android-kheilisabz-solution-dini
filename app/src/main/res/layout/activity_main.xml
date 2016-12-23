@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:layoutDirection="ltr"
-    tools:context="com.majidhhdri.kheili.kheili.MainActivity">
+    tools:context="com.majidhhdri.kheilisabz.dini.MainActivity">
 
     <Button
         android:layout_width="wrap_content"

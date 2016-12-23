@@ -1,4 +1,4 @@
-package com.majidhhdri.kheili.kheili;
+package com.majidhhdri.kheilisabz.dini;
 
 import org.junit.Test;
 
