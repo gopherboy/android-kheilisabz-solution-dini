@@ -5,6 +5,7 @@ import android.support.design.internal.BottomNavigationMenu;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     int questionNumber = 1;
     ImageView solution;
     TextView counter;
-    Switch keepScreenOnSwitch;
+    SwitchCompat keepScreenOnSwitch;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         solution = (ImageView)findViewById(R.id.solution);
-        keepScreenOnSwitch = (Switch)findViewById(R.id.keep_on_switch);
+        keepScreenOnSwitch = (SwitchCompat) findViewById(R.id.keep_on_switch);
         int id = getApplicationContext().getResources().getIdentifier("dini0001", "drawable", getPackageName());
         solution.setImageResource(id);
         Button plusOne = (Button)findViewById(R.id.plus_1);
