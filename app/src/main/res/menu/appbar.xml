@@ -5,5 +5,5 @@
     tools:context=".MainActivity">
     <item android:id="@+id/action_settings"
         android:title="@string/action_about"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 </menu>

@@ -12,7 +12,7 @@
     <string name="action_about">درباره برنامه</string>
     <string name="keep_screen_on">روشن نگه‌داشتن صفحه</string>
     <string name="app_description">داده‌های این برنامه از سایت رسمی خیلی سبز برگرفته شده است.</string>
-    <string name="app_license">این برنامه تحت Apache License 2.0 عرضه شده.</string>
-    <string name="app_source">این برنامه متن باز است و سورس این برنامه از طریق لینک زیر قابل دسترسی‌ست.</string>
+    <string name="app_license">این برنامه تحت Apache License 2.0 عرضه شده است.</string>
+    <string name="app_source">این برنامه متن باز است و سورس این برنامه از طریق لینک زیر قابل دسترسی است.</string>
     <string name="app_developer">توسعه‌دهنده: مجید حاجی‌حیدری</string>
 </resources>

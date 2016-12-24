@@ -11,8 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|density|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme">
+            android:configChanges="orientation|density|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
