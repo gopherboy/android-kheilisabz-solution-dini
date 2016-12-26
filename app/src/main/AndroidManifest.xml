@@ -17,9 +17,9 @@
         <meta-data
             android:name="AdadToken"
             android:value="475b50392b1945ab95794ea9990d55f0" />
-        <meta-data
-            android:name="AdadTestMode"
-            android:value="true"/>
+        <!--<meta-data-->
+            <!--android:name="AdadTestMode"-->
+            <!--android:value="true"/>-->
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|density|keyboardHidden|screenSize">
