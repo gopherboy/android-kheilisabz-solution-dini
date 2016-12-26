@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.majidhhdri.kheilisabz.dini.R;
 
+import ir.adad.client.Adad;
+
 import static android.R.attr.data;
 
 public class AboutActivity extends AppCompatActivity {
@@ -20,6 +22,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        Adad.initialize(getApplicationContext());
         Toolbar myChildToolbar =
                 (Toolbar) findViewById(R.id.about_toolbar);
         setSupportActionBar(myChildToolbar);

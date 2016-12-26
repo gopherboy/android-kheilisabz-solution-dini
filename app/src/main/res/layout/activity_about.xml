@@ -34,7 +34,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/textView2" />
+            android:id="@+id/textView2"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"/>
 
         <TextView
             android:text="@string/app_license"
@@ -43,7 +45,9 @@
             android:layout_below="@+id/textView2"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/textView3" />
+            android:id="@+id/textView3"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"/>
 
         <TextView
             android:text="@string/app_source"
@@ -52,7 +56,9 @@
             android:layout_below="@+id/textView3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/textView4" />
+            android:id="@+id/textView4"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"/>
 
         <TextView
             android:text="@string/app_developer"
@@ -61,7 +67,9 @@
             android:layout_below="@+id/textView4"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/textView5" />
+            android:id="@+id/textView5"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"/>
 
         <Button
             android:text="ایمیل توسعه‌دهنده"
@@ -73,7 +81,8 @@
             android:layout_alignParentEnd="true"
             style="@style/AppTheme2"
             android:textColor="#000000"
-            android:onClick="developerEMAIL" />
+            android:onClick="developerEMAIL"
+            android:layoutDirection="rtl"/>
 
         <Button
             android:text="لینک سورس‌کد"
@@ -85,7 +94,16 @@
             android:layout_alignParentEnd="true"
             style="@style/AppTheme2"
             android:textColor="#000000"
-            android:onClick="sourceWebsite" />
+            android:onClick="sourceWebsite"
+            android:layoutDirection="rtl"/>
+        <ir.adad.client.Banner
+            android:id="@+id/banner_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            />
     </RelativeLayout>
 
 
